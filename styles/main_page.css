@@ -1,0 +1,188 @@
+/*
+.first-color { 
+	background: #00204a; 
+}
+	
+.second-color { 
+	background: #005792; 
+}
+
+.third-color { 
+	background: #00bbf0; 
+}
+
+.fourth-color { 
+	background: #fdb44b; 
+}
+
+gray: #eeeeee;
+dark gray: #636060;
+*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eeeeee;
+    /*border: 3px solid yellow;*/
+}
+
+.header {
+    width: 100%;
+    background-color: #005792;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display: flex;
+}
+
+.logo{
+    height: 45px;
+    width: 45px;
+    background-color: #fdb44b;
+    border-radius: 50%;
+    margin: 8px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid yellow;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    border: 1px solid red;
+    margin: 2%;
+}
+
+/*.filler {*/
+/*    width: 25%;*/
+/*}*/
+/*.contacts {*/
+/*    width: 30%;*/
+/*}*/
+
+.search {
+    display: flex;
+    width: 95%;
+    margin: 3%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #00bbf0;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+h5 {
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif; 
+    margin-top: 4%;
+    font-size:40px;
+    color: #636060;
+    margin-left: 4%;
+}
+
+h6{
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif; 
+    font-size: 14px;
+    color: #00204a;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.search-bar{
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif; 
+    border-radius: 10px;
+    border: none;
+    width: 90%;
+    padding-left: 10px;
+    margin: 4%;
+    position: relative;
+    background-color: #eeeeee;
+    font-size: 20px;
+    padding: 8px;
+    font-weight: bold;
+    color: #636060;
+}
+
+.add-neighbors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    margin: 5%;
+    background-color: #005792;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+.usr-profile {
+    display: flex;
+    width: 25%;
+    margin: 4%;
+    flex-direction: column;
+}
+
+.format {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.brief-desc {
+    background-color: #eeeeee;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.add-btn {
+    margin: 5%;
+    width: 80%;
+    background-color: #fdb44b;
+    color: #00204a;
+    border: none;
+    border-radius: 10px;
+    padding: 4%;
+    text-decoration: none;
+}
+
+.add-btn:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+a {
+    width: 85%;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-header {
+}
+
+.post-image {
+    height: 45px;
+    width: 45px;
+    background-color: #fdb44b;
+    border-radius: 50%;
+    margin: 8px;
+    float: left;
+}
