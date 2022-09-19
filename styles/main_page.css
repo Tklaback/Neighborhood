@@ -1,5 +1,6 @@
 /*
 .first-color { 
+<<<<<<< HEAD
 	blue-dark:  #155263; 
 }
 	
@@ -13,6 +14,21 @@
 
 .fourth-color { 
 	yellow: #ffc93c; 
+=======
+	background: #155263; 
+}
+	
+.second-color { 
+	background: #ff6f3c; 
+}
+
+.third-color { 
+	background: #ff9a3c; 
+}
+
+.fourth-color { 
+	background: #ffc93c; 
+>>>>>>> 6f6e3c27d3dee82197dbb1a44b6125d5deea6892
 }
 
 gray: #eeeeee;
