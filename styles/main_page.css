@@ -1,6 +1,5 @@
 /*
 .first-color { 
-<<<<<<< HEAD
 	blue-dark:  #155263; 
 }
 	
@@ -14,21 +13,6 @@
 
 .fourth-color { 
 	yellow: #ffc93c; 
-=======
-	background: #155263; 
-}
-	
-.second-color { 
-	background: #ff6f3c; 
-}
-
-.third-color { 
-	background: #ff9a3c; 
-}
-
-.fourth-color { 
-	background: #ffc93c; 
->>>>>>> 6f6e3c27d3dee82197dbb1a44b6125d5deea6892
 }
 
 gray: #eeeeee;
@@ -63,6 +47,12 @@ body{
     background-color: #fdb44b;
     border-radius: 50%;
     margin: 8px;
+}
+
+
+.logo:hover{
+    opacity: .5;
+    cursor: pointer;
 }
 
 .main-content {
@@ -196,10 +186,5 @@ a {
 }
 
 .post-image {
-    height: 45px;
-    width: 45px;
-    background-color: #fdb44b;
-    border-radius: 50%;
-    margin: 8px;
-    float: left;
+
 }
