@@ -203,6 +203,10 @@ h6{
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+    color: #155263;
+}
 
 
 /*@media only screen and (max-width: 400px) {*/

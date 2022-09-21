@@ -45,6 +45,9 @@ function myFunc(isFirst=0){
         old = current;
     }
     else if (oldGroup === 0 && curGroup === 1){
+        if (linksDisplayedVert){
+            displayLinks();
+        }
         bringBack();
     }
 }
