@@ -58,8 +58,8 @@ function fade(element){
 }
 
 function displayLinks(){
-    let arr = [["about", "https://facebook.com", "1"], ["watch", "#", "2"], ["Help", "#", "3"], 
-    ["sponsor", "#", "4"]];
+    let arr = [["About", "https://facebook.com", "1"], ["Help", "#", "2"], ["Watch", "#", "3"], 
+    ["Sponsor", "#", "4"]];
     if (!linksDisplayedVert){
         arr.forEach(element => {
             var myDiv = document.createElement("a");
