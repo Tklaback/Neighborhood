@@ -1,3 +1,5 @@
+var linksDisplayedVert = false;
+
 var bounds = [
     {min:0,max:500},
     {min:500,max:850},
@@ -6,18 +8,22 @@ var bounds = [
 
 var old = window.innerWidth;
 
-var elem = document.getElementById('links');
+var logo = document.getElementById('links');
+
+var bars = document.getElementById('bars');
 
 
 function dropDown(){
-    elem.style.display = 'none';
+    logo.style.display = 'none';
+    bars.style.display = 'block';
 }
 
 function bringBack(){
-    elem.style.display = 'flex';
+    logo.style.display = 'flex';
+    bars.style.display = 'none';
 }
 
-function myFunc(){
+function myFunc(isFirst=0){
     let oldGroup;
     let curGroup;
     let current = window.innerWidth;
@@ -44,8 +50,22 @@ function myFunc(){
 }
 
 
+function fade(element){
+    
+}
+
+function displayLinks(){
+    let dict = {"logo":27}
+    var myDiv = document.createElement("div");
+    myDiv.className = "logo";
+    document.getElementById("main-hdr").appendChild(myDiv);
+}
+
+
 window.onload = function() {
-  myFunc(1);
+    bars.style.display = 'none';
+    myFunc(1);
+  
 };
 addEventListener('resize', (event) => {myFunc()});
 // addEventListener('resize', (event));

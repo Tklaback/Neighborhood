@@ -28,10 +28,17 @@ body{
     /*border: 3px solid yellow;*/
 }
 
+.ext-hdr{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #005792;
+    overflow: hidden;
+}
+
 .header {
     width: 100%;
     background-color: #005792;
-    overflow: hidden;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -172,9 +179,6 @@ h6{
     opacity: .5;
 }
 
-a {
-    width: 85%;
-}
 
 .post {
     display: flex;
@@ -188,3 +192,48 @@ a {
 .post-image {
 
 }
+
+
+#bars {
+    color: #ff9a3c;
+    cursor: pointer;
+}
+
+
+
+/*@media only screen and (max-width: 400px) {*/
+  .q-display { /* Masonry container */
+/*    width: 90%;*/
+/*    border: 1px solid black;*/
+    /*flex: 70%;*/
+/*    margin: 15px;*/
+/*    column-count: 4;*/
+/*    column-gap: 1em;*/
+/*}*/
+/*}*/
+
+/* Tablet Styles */
+/*@media only screen and (min-width: 401px) and (max-width: 960px) {*/
+  
+    .q-display { /* Masonry container */
+/*        width: 90%;*/
+/*        border: 1px solid black;*/
+        /*flex: 70%;*/
+/*        margin: 15px;*/
+/*        column-count: 6;*/
+/*        column-gap: 1em;*/
+/*    }*/
+
+/*}*/
+
+/* Desktop Styles */
+/*@media only screen and (min-width: 961px) {*/
+    .q-display { /* Masonry container */
+/*        width: 90%;*/
+/*        border: 1px solid black;*/
+        /*flex: 70%;*/
+/*        margin: 15px;*/
+/*        column-count: 8;*/
+/*        column-gap: 1em;*/
+/*    } */
+/*}*/
