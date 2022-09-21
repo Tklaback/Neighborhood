@@ -1,8 +1,6 @@
-var linksDisplayedVert = false;
-
 var bounds = [
-    {min:0,max:500},
-    {min:500,max:850},
+    {min:0,max:600},
+    {min:600,max:850},
     {min:850, max:Number.MAX_VALUE}
 ];
 
@@ -11,6 +9,8 @@ var old = window.innerWidth;
 var logo = document.getElementById('links');
 
 var bars = document.getElementById('bars');
+
+var linksDisplayedVert = false;
 
 
 function dropDown(){
@@ -55,10 +55,25 @@ function fade(element){
 }
 
 function displayLinks(){
-    let dict = {"logo":27}
-    var myDiv = document.createElement("div");
-    myDiv.className = "logo";
-    document.getElementById("main-hdr").appendChild(myDiv);
+    let arr = [["about", "https://facebook.com", "1"], ["watch", "#", "2"], ["Help", "#", "3"], 
+    ["sponsor", "#", "4"]];
+    if (!linksDisplayedVert){
+        arr.forEach(element => {
+            var myDiv = document.createElement("a");
+            myDiv.className = "logo";
+            myDiv.textContent = element[0];
+            myDiv.id = element[2];
+            myDiv.href = element[1];
+            document.getElementById("main-hdr").appendChild(myDiv);
+            linksDisplayedVert = true;
+        });
+    }
+    else{
+        arr.forEach(element => {
+            document.getElementById(element[2]).remove();
+            linksDisplayedVert = false;
+        });
+    }
 }
 
 
