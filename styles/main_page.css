@@ -50,13 +50,23 @@ body{
 }
 
 .lnk{
-    padding: 50px;
+    padding-left: 30px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    padding-right: 30px;
     color: #ffc93c;
 }
 
 .lnk:hover{
     background-color: #ffc93c;
     color: #155263;
+}
+
+.biz {
+    height: 9em;
+    width: 150px;
+    background-color: #ffc93c;
+    margin-right: 25px;
 }
 
 .logo{
@@ -233,6 +243,10 @@ h6{
 a {
     text-decoration: none;
     color: #155263;
+}
+
+.header a{
+    height: 9em;
 }
 
 
