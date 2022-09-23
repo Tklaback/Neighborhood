@@ -63,7 +63,7 @@ function displayLinks(){
     if (!linksDisplayedVert){
         arr.forEach(element => {
             var myDiv = document.createElement("a");
-            myDiv.className = "logo";
+            myDiv.className = "newLink";
             myDiv.textContent = element[0];
             myDiv.id = element[2];
             myDiv.href = element[1];

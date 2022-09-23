@@ -21,16 +21,12 @@ dark gray: #636060;
 
 body{
     font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif; 
+    background-color: #eeeeee;
 }
 
 *{
     margin: 0;
     box-sizing: border-box;
-}
-
-body{
-    background-color: #eeeeee;
-    /*border: 3px solid yellow;*/
 }
 
 .ext-hdr{
@@ -63,6 +59,17 @@ body{
     align-items: center;
     justify-content: center;
     overflow: inherit;
+}
+
+.newLink{
+    height: 55px;
+    background-color: #ffc93c;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: inherit;
+    width: 100%;
 }
 
 
