@@ -1,7 +1,7 @@
 var bounds = [
-    {min:0,max:600},
-    {min:600,max:850},
-    {min:850, max:Number.MAX_VALUE}
+    {min:0,max:900},
+    {min:900,max:1000},
+    {min:1000, max:Number.MAX_VALUE}
 ];
 
 var old = window.innerWidth;

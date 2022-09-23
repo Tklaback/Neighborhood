@@ -49,16 +49,32 @@ body{
     display: flex;
 }
 
+.lnk{
+    padding: 50px;
+    color: #ffc93c;
+}
+
+.lnk:hover{
+    background-color: #ffc93c;
+    color: #155263;
+}
+
 .logo{
-    height: 55px;
-    width: 55px;
+    height: 85px;
+    width: 85px;
     background-color: #ffc93c;
     border-radius: 50%;
-    margin: 8px;
+    margin: 25px;
+    padding: 7px;
+    border: 2px solid #ffc93c;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: inherit;
+    position: relative;
+}
+
+.right{
+    left: -25px;
 }
 
 .newLink{
@@ -71,7 +87,6 @@ body{
     overflow: inherit;
     width: 100%;
 }
-
 
 .logo:hover{
     opacity: .5;
