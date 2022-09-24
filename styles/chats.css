@@ -1,0 +1,124 @@
+.my-messages{
+    display: flex;
+}
+
+.chats {
+    display: flex;
+    width: 25%;
+    max-width: 800px;
+    flex-direction: column;
+    margin: 0 0 10px 0;
+    border-right: 3px solid #155263;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+@media only screen and (min-width: 600px){
+    .chats-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .chats-header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.message{
+    display: flex;
+}
+
+.chats-img{
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+}
+
+.p{
+    margin: 15px;
+    font-size: 24px;
+}
+
+.chat-search{
+    display:flex;
+    align-text: center;
+    justify-content: center;
+}
+
+.chat-s-bar{
+    margin: 5px;
+    width: 75%;
+    height: 35px;
+}
+
+.convos{
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 1000px){
+    .convo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: #ff6f3c;
+        border-bottom: 2px solid #ffc93c;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .convo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ff6f3c;
+        border-bottom: 2px solid #ffc93c;
+    }
+}
+
+.convo:hover{
+    background-color: #ff9a3c;
+}
+
+.convo-image{
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 8px;
+    border:2px solid #ff9a3c;
+}
+
+.name{
+    color:  #155263;
+}
+
+.message{
+    display: flex;
+    height:80vh;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 75%;
+}
+
+.message-bar{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-img{
+    width: 30px;
+    height: 30px;
+}
