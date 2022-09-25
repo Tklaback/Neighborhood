@@ -95,7 +95,7 @@ body{
         position: relative;
         top: -75px;
         border-radius: 50%;
-        border: 3px solid #eeeeee;
+        border: 8px solid #ff6f3c;
         left: -35%;
     }
     .tool-bar{
@@ -114,7 +114,7 @@ body{
         position: relative;
         top: -75px;
         border-radius: 50%;
-        border: 3px solid #eeeeee;
+        border: 8px solid #ff6f3c;
     }
     .tool-bar{
         display: flex;
@@ -156,9 +156,11 @@ h4 {
 
 .quality{
     text-align: center;
-    border: 1px solid red;
     flex: 30%;
     padding: 25px;
+    background-color: #ffc93c;
+    color:  #155263;
+    
 }
 
 .my-listing {
