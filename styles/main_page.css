@@ -372,3 +372,13 @@ br {
     font-size: 45px;
     font-weight: bolder;
 }
+
+.footer{
+    height: 95px;
+    width: 100%;
+    background-color: #155263;
+}
+
+.footer p{
+    color: #eeeeee;
+}
