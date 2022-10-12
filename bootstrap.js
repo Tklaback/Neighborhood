@@ -86,3 +86,4 @@ window.onload = function() {
 };
 addEventListener('resize', (event) => {myFunc()});
 // addEventListener('resize', (event));
+
