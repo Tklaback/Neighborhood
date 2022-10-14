@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
+    <link rel="stylesheet" href="styles/login.css" type="text/css" />
   </head>
   <body>
-    <form>
-      <label>Sign Up</label>
-      <input id="usrInput" type="text" placeholder="Username"/>
-      <input type="password" id="pwrd" placeholder="Password"/>
-      <button id="submitBtn" type="submit">Submit</button>
-    </form>
+    <div id="formHolder">
+      <form id="frm">
+        <label>Sign Up</label>
+        <div id="fields">
+          <input class="input" id="usrInput" type="text" placeholder="Username"/>
+          <input class="input" type="password" id="pwrd" placeholder="Password"/>
+        </div>
+        <button id="submitBtn" type="submit">Submit</button>
+      </form>
+    </div>
     <!--<script type="module" src="./requirejs/require.js"></script>-->
     <script type="module" src="login.js"></script>
   </body>

@@ -7,32 +7,45 @@ document.getElementById("submitBtn").addEventListener("click", (event) =>
 {
   event.preventDefault();
   let isValid;
-  
-  // fetch("https://open.kickbox.com/v1/disposable/afjlakjflkajflkajfnvlaknvlaknvlkand.com")
-  // .then(response => response.json())
-  // .then((json)=>{
-  //   isDisposable = json.disposable;
-  //   alert(json);
-  // });
+  let pwrdScore = zxcvbn(document.getElementById("pwrd").value).score;
+  var frm = document.getElementById("frm");
   
   var requestOptions = {
     method: "GET",
     redirect: "follow"
   };
   
-  fetch(API + document.getElementById("usrInput").value)
+  fetch(API + document.getElementById("usrInput").value, requestOptions)
   .then((response) => response.json())
   .then((json) => {
     isValid = (json.status == "success");
-    if (zxcvbn(document.getElementById("pwrd").value).score <= 2){
-      if (isValid === false){
-       console.log("NOT CORRECT");
-      }
-      else{
-        console.log("CORRECT");
-      }
+    if (pwrdScore <= 2 && !isValid){
+      document.getElementById("usrInput").placeholder ="Please enter valid email";
+      document.getElementById("pwrd").placeholder ="Please enter stronger Password";
+      document.getElementById("usrInput").style.outline = "solid red";
+      document.getElementById("pwrd").style.outline = "solid red";
+      frm.reset();
+    }
+    else if (!isValid){
+        // document.getElementById("usrInput").placeholder.color = "red";
+      document.getElementById("usrInput").placeholder="Please enter valid email";
+      document.getElementById("usrInput").value = '';
+      document.getElementById("usrInput").style.outline = "solid red";
+      document.getElementById("usrInput").style.outline = "solid red";
+      document.getElementById("pwrd").style.outline = "none";
+    }
+    else if (pwrdScore <= 2){
+      // document.getElementById("pwrd").placeholder.color = "red";
+      document.getElementById("pwrd").placeholder="Please enter stronger password";
+      document.getElementById("pwrd").value = "";
+      document.getElementById("usrInput").style.outline = "none";
+      document.getElementById("pwrd").style.outline = "solid red";
+    }
+    else{
+      frm.submit();
+      frm.reset();
+      frm.style.border = "2px solid green";
+      alert("HELLO");
     }
   });
-  
-  
 });

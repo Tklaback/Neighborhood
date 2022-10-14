@@ -1,0 +1,87 @@
+/*
+.first-color { 
+	blue-dark:  #155263; 
+}
+	
+.second-color { 
+	dark orange: #ff6f3c; 
+}
+
+.third-color { 
+	light orange: #ff9a3c; 
+}
+
+.fourth-color { 
+	yellow: #ffc93c; 
+}
+
+gray: #eeeeee;
+dark gray: #636060;
+*/
+
+body{
+    background-color: #ff9a3c;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif; 
+}
+
+label {
+    font-size: 32px;
+    color:   #155263;
+}
+
+#formHolder{
+    display: flex;
+    justify-content: center;
+}
+#frm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 50px;
+    padding: 45px;
+    width: 450px;
+    height: 240px;
+    box-shadow:
+      2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+      6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+      12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+      22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+      41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+      100px 100px 80px rgba(0, 0, 0, 0.07)
+    ;
+    border-radius: 45px;
+    background-color: #ff6f3c
+}
+
+#fields{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    margin: 5px;
+    outline: none;
+    border: none;
+    padding: 15px;
+    background-color:  #ffc93c;
+    color: #155263;
+    border-radius: 25px;
+}
+
+button{
+    width: 70px;
+    height: 45px;
+    border: none;
+    font-family: Didot, Didot LT STD, Hoefler Text, Garamond, Times New Roman, serif; 
+    background-color: #ffc93c;
+    box-shadow: 5px 10px #155263;
+    color: #155263;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #155263; 
+    color: #ffc93c;
+    box-shadow: 5px 10px #ffc93c;
+}

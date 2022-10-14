@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@stytch/react": "^0.4.6",
+    "@stytch/stytch-js": "^3.3.2",
+    "@stytch/vanilla-js": "^0.4.6",
+    "jquery": "^3.6.1",
+    "requirejs": "^2.3.6",
+    "stytch": "^5.13.0",
+    "zxcvbn": "^4.4.2"
+  }
+}
