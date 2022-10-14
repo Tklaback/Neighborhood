@@ -45,7 +45,6 @@ document.getElementById("submitBtn").addEventListener("click", (event) =>
       frm.submit();
       frm.reset();
       frm.style.border = "2px solid green";
-      alert("HELLO");
     }
   });
 });
