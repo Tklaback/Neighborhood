@@ -85,3 +85,16 @@ button:hover {
     color: #ffc93c;
     box-shadow: 5px 10px #ffc93c;
 }
+
+.foot{
+    display: flex;
+    background-color: #FF731D;
+    height: 50px;
+    color: #FFF7E9;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+}
